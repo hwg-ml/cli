@@ -1,0 +1,21 @@
+[project]
+name = "hwg-ml-cli"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yannik Hahn", email = "yannik@h4hn.de" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.5.0",
+    "requests>=2.34.2",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+hwg-ml = "hwg_ml_cli:cli"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
